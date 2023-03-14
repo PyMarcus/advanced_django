@@ -52,3 +52,9 @@ class Team(Base):
     twitter = models.CharField('Twitter', max_length=100, default='#')
     instagram = models.CharField('Instagram', max_length=100, default='#')
 
+    class Meta:
+        verbose_name = 'Employee'
+        verbose_name_plural = 'Teams'
+
+    def __repr__(self) -> str:
+        return str(self.name)
