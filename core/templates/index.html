@@ -1,26 +1,29 @@
+{% load static %}
+
+
  <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Fusion - Bootstrap 4 Template</title>
+    <title>Fusion</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" >
     <!-- Icon -->
-    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <link rel="stylesheet" href="{% static 'assets/fonts/line-icons.css' %}">
     <!-- Owl carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
     
     <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
     <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
     <!-- Responsive Style -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
 
   </head>
   <body>
@@ -31,7 +34,7 @@
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>       
+          <a href="index.html" class="navbar-brand"><img src="{% static 'urlassets/img/logo.png' %}" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -89,7 +92,7 @@
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
               <div class="intro-img">
-                <img class="img-fluid" src="assets/img/intro-mobile.png" alt="">
+                <img class="img-fluid" src="{% static 'assets/img/intro-mobile.png' %}" alt="">
               </div>            
             </div>
           </div> 
@@ -206,7 +209,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-            <img class="img-fluid" src="assets/img/about/img-1.png" alt="" >
+            <img class="img-fluid" src="{% static 'assets/img/about/img-1.png' %}" alt="" >
           </div>
         </div>
       </div>
@@ -254,7 +257,7 @@
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
-              <img src="assets/img/feature/intro-mobile.png" alt="">
+              <img src="{% static 'assets/img/feature/intro-mobile.png' %}" alt="">
             </div>
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -305,7 +308,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-01.png" alt="">
+                <img class="img-fluid" src="{% static 'assets/img/team/team-01.png' %}" alt="">
               </div>
               <div class="contetn">
                 <div class="info-text">
@@ -326,7 +329,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.4s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-02.png" alt="">
+                <img class="img-fluid" src="{% static 'assets/img/team/team-02.png' %}" alt="">
               </div>
               <div class="contetn">
                 <div class="info-text">
@@ -347,7 +350,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.6s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-03.png" alt="">
+                <img class="img-fluid" src="{% static 'assets/img/team/team-03.png' %}" alt="">
               </div>
               <div class="contetn">
                 <div class="info-text">
@@ -368,7 +371,7 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/team/team-04.png" alt="">
+                <img class="img-fluid" src="{% static 'assets/img/team/team-04.png' %}" alt="">
               </div>
               <div class="contetn">
                 <div class="info-text">
@@ -472,7 +475,7 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="assets/img/testimonial/img1.jpg" alt="">
+                    <img src="{% static 'assets/img/testimonial/img1.jpg' %}" alt="">
                   </div>
                   <div class="info">
                     <h2><a href="#">David Smith</a></h2>
@@ -493,7 +496,7 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="assets/img/testimonial/img2.jpg" alt="">
+                    <img src="{% static 'assets/img/testimonial/img2.jpg' %}" alt="">
                   </div>
                   <div class="info">
                     <h2><a href="#">Domeni GEsson</a></h2>
@@ -514,7 +517,7 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="assets/img/testimonial/img3.jpg" alt="">
+                    <img src="{% static 'assets/img/testimonial/img3.jpg' %}" alt="">
                   </div>
                   <div class="info">
                     <h2><a href="#">Dommini Albert</a></h2>
@@ -535,7 +538,7 @@
               <div class="item">
                 <div class="testimonial-item">
                   <div class="img-thumb">
-                    <img src="assets/img/testimonial/img4.jpg" alt="">
+                    <img src="{% static 'assets/img/testimonial/img4.jpg' %}" alt="">
                   </div>
                   <div class="info">
                     <h2><a href="#">Fernanda Anaya</a></h2>
@@ -641,7 +644,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
-                <h3 class="footer-logo"><img src="assets/img/logo.png" alt=""></h3>
+                <h3 class="footer-logo"><img src="{% static 'assets/img/logo.png' %}" alt=""></h3>
                 <div class="textwidget">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</p>
                 </div>
@@ -716,17 +719,17 @@
     <!-- End Preloader -->
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="{% static 'assets/js/jquery-min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nav.js' %}"></script>
+    <script src="{% static 'assets/js/scrolling-nav.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'assets/js/contact-form-script.min.js' %}"></script>
       
   </body>
 </html>
