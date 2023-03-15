@@ -63,7 +63,16 @@
     <!-- Call To Action Section Start -->
     {% include 'call.html' %}
     <!-- Call To Action Section Start -->
-
+    <div>
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                <strong>{{ message }}</strong>
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+          {% endfor %}
+          {% endif %}
+      </div>
     <!-- Contact Section Start -->
     {% include 'contact.html' %}
     <!-- Contact Section End -->
