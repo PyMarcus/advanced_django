@@ -31,6 +31,9 @@ class Services(Base):
     def __repr__(self) -> str:
         return str(self.service)
 
+    def __str__(self) -> str:
+        return str(self.service)
+
 
 class Profission(Base):
     profission = models.CharField("Profission", max_length=100)
@@ -39,6 +42,12 @@ class Profission(Base):
         verbose_name = 'Profission'
         verbose_name_plural = 'Profissionals'
 
+    def __repr__(self) -> str:
+        return str(self.profission)
+
+    def __str__(self) -> str:
+        return str(self.profission)
+
 
 class Team(Base):
     name = models.CharField("Name", max_length=100)
@@ -46,8 +55,7 @@ class Team(Base):
                                    on_delete=models.CASCADE)
     description = models.TextField("Description", max_length=200)
     image = StdImageField("Image", upload_to='team', variations={'thumb': {'width': 480,
-                                                                      'heigth': 480,
-                                                                           'crop': True}})
+                                                                      'height': 480, 'crop': True}})
     facebook = models.CharField('Facebook', max_length=100, default='#')
     twitter = models.CharField('Twitter', max_length=100, default='#')
     instagram = models.CharField('Instagram', max_length=100, default='#')
@@ -57,4 +65,7 @@ class Team(Base):
         verbose_name_plural = 'Teams'
 
     def __repr__(self) -> str:
+        return str(self.name)
+
+    def __str__(self) -> str:
         return str(self.name)
